@@ -21,5 +21,9 @@ class AdminController extends Controller
     	$contacts=Contact::latest()->get();
     	return view('admin.contact',compact('contacts'));
     }
+
+    public function profile(){
+        return view('admin.profile');
+    }
     
 }
