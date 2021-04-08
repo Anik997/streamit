@@ -48,7 +48,7 @@
                                  <a href="#" class="iq-sub-card" >
                                     <div class="media align-items-center">
                                        <div class="">
-                                          <img class="avatar-40 rounded" src="{{asset('assets/backend/assets/images/user/01.jpg')}}" alt="">
+                                          <img class="avatar-40 rounded" src="{{asset('assets/backend/profile/'.Auth::user()->avatar)}}" alt="">
                                        </div>
                                        <div class="media-body ml-3">
                                           <h6 class="mb-0 ">Emma Watson Barry</h6>
@@ -169,7 +169,7 @@
                      </li>
                      <li class="line-height pt-3">
                         <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
-                           <img src="{{asset('assets/backend/assets/images/user/1.jpg')}}" class="img-fluid rounded-circle mr-3" alt="user">
+                           <img src="{{asset('assets/backend/profile/'.Auth::user()->avatar)}}" class="img-fluid rounded-circle mr-3" alt="user">
                         </a>
                         <div class="iq-sub-dropdown iq-user-dropdown">
                            <div class="iq-card shadow-none m-0">
@@ -190,7 +190,6 @@
                                        </div>
                                     </div>
                                  </a>
-                              
 
                                  <div class="d-inline-block w-100 text-center p-3">
                                     <a class="bg-primary iq-sign-btn" href="#" role="button" onclick="event.preventDefault();

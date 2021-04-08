@@ -36,6 +36,8 @@ Route::group(['prefix'=>'admin','namespace'=>'admin'],function(){
 	Route::get('/','AdminController@index')->name('dashboard');
 	Route::get('contact-message','AdminController@contact')->name('contact.index');
 	Route::get('edit-profile','AdminController@profile')->name('admin.edit.profile');
+	Route::post('admin-profile','AdminController@update')->name('admin.profile.update');
+	Route::post('admin-password','AdminController@password_change')->name('admin.password.update');
 
 	// category routes
 	   Route::get('category','CategoryController@index')->name('category.index');
